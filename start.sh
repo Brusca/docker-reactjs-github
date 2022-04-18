@@ -33,4 +33,9 @@ cd /usr/src/app
 
 npm ci --only=production
 
+sed -i 's/;;/;/g' /usr/src/app/node_modules/semantic-ui-css/semantic.css
+sed -i 's/;;/;/g' /usr/src/app/node_modules/semantic-ui-css/semantic.min.css
+sed -i 's/;;/;/g' /usr/src/app/node_modules/semantic-ui-css/components/step.css
+sed -i 's/;;/;/g' /usr/src/app/node_modules/semantic-ui-css/components/step.min.css
+
 exec npm start
